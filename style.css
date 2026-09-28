@@ -1,0 +1,610 @@
+*{
+  Margin: 0;
+  Padding: 0;
+  Box-sizing: border-box;
+    Font-family: “Poppins”, sans-serif;
+}
+
+Html {
+  Scroll-behavior: smooth;
+}
+
+Body {
+  Background: rgb(248, 225, 198);
+  Color: black;
+} 
+
+a{
+  Text-decoration: none;
+}
+
+Ul {
+  List-style: none;
+}
+
+.header {
+  Position: fixed;
+  Top: 1rem;
+  Left: 50%;
+  Transform: translateX(-50%);
+  Display: flex;
+  Align-items: center;
+  Gap: 1.5rem;
+  Background: rgb(10, 10, 10);
+  Backdrop-filter: blur(8px);
+  Padding: 0.5rem 1.5rem;
+  Border-radius: 3rem;
+  z-index: 1000;
+}
+
+.logo {
+  Color: rgb(196, 13, 98);
+  Font-size: 1.4rem;
+  Font-weight: 600;
+  White-space: nowrap;
+  Transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  Transform: scale(1.05);
+}
+
+.logo span {
+  Background: linear-gradient(to right, rgb(201, 6, 87), rgb(81, 81, 248));
+  -webkit-background-clip: text;
+  Background-clip: text;
+  Color: transparent;
+}
+
+.nav-links  {
+  Display: flex;
+  Gap: 1.5rem;
+}
+
+
+.nav-links li a {
+  Position: relative;
+  Color: rgb(223, 49, 194) ;
+  Font-weight: 300;
+  Transition: color 0.3s ease;
+}
+
+.nav-links li a::before {
+  Content: “”;
+  Position: absolute;
+  Left: 0;
+  Top: 25px;
+  Width: 0;
+  Height: 5px;
+  Border-radius: 5px;
+  Background: linear-gradient(to right, rgb(214, 64, 89), rgb(52, 52, 243));
+  Transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::before {
+  Width: 100%;
+}
+
+.visit-btn {
+  Padding: 0.8rem 1.5rem;
+  Border-radius: 3rem;
+  Border: none;
+  Background: linear-gradient(to right,rgb(182, 18, 81), rgb(69, 2, 194));
+  Color: rgb(255, 255, 255);
+  Font-weight: 500;
+  Font-size: 1rem;
+  Cursor: pointer;
+  White-space: nowrap;
+  Transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.visit-btn:hover {
+  Transform: scale(1.05);
+  Background: linear-gradient(to right, rgb(252, 177, 143) , rgb(245, 0, 0) );
+}
+
+.menu-icon {
+  Display: none;
+  Color: white;
+  Font-size: 1.5rem;
+  Cursor: pointer;
+}
+
+/* -------------------------
+   About Section
+-------------------------- */
+.about {
+  Min-height: 100vh;
+  Padding: 8rem 12% 4rem;
+  Width: 100%;
+  Position: relative;
+}
+
+.about-container {
+  Display: flex;
+  Align-items: center;
+  Justify-content: center;
+  Gap: 3rem;
+}
+
+.about-img {
+  Width: 30vw;
+  Border-radius: 50%;
+  Object-fit: cover;
+}
+
+.info-box {
+  Display: flex;
+  Flex-direction: column;
+  Align-items: center;
+  Text-align: center;
+  Gap: 1.5rem;
+}
+
+.info-box .text h3 {
+  Font-size: 1.5rem;
+  Font-weight: 400;
+  Opacity: 0.8;
+}
+
+.info-box .text h1 {
+  Font-size: 3rem;
+  Font-weight: 700;
+}
+
+.job-title {
+  Font-size: 2rem;
+  Background: linear-gradient(to right, blue, rgb(223, 73, 98) );
+  -webkit-background-clip: text;
+  Background-clip: text;
+  Color: transparent;
+}
+
+.button-group {
+  Display: flex;
+  Gap: 1rem;
+  Flex-wrap: wrap;
+  Justify-content: center;
+}
+
+.btn {
+  Padding: 0.5rem 1.5rem;
+  Border-radius: 3rem;
+  Border: 2px solid rgb(214, 30, 116);
+  Background: transparent;
+  Color:rgb(5, 5, 5);
+  Font-weight: 500;
+  Cursor: pointer;
+  White-space: nowrap;
+  Transition: all 0.3s ease;
+}
+
+.btn:hover { 
+  Background:black;
+  Color: rgb(240, 39, 163);
+}
+
+.socials {
+  Display: flex;
+  Gap: 1rem;
+}
+
+.socials a {
+  Color: rgb(0, 0, 0);
+  Font-size: 1.5rem;
+  Transition: transform 0.3s ease;
+}
+
+.socials a:hover {
+  Transform: scale(1.1);
+}
+
+.section-title {
+  Text-align: center;
+  Font-size: 2.5rem;
+  Font-weight: 700;
+  Margin-bottom: 2rem;
+}
+
+/* -------------------------
+   Skills section
+-------------------------- */
+.skills {
+  padding: 50px 30px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+  .skill-item {
+  margin-bottom: 16px;
+ 
+}
+  .skill-item span{
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color:rgb(10, 10, 10)
+}
+.skill-bar {
+  background:rgb(233, 18, 90);
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+  margin-top: 6px; 
+}
+
+.skill-progress {
+  background:violet;
+  height: 100%;
+  border-radius: 10px;
+}
+
+
+
+
+/* -------------------------
+   Experience Section
+-------------------------- */
+.experience {
+  Padding: 4rem 12%;
+}
+
+.experience-info {
+  Display: flex;
+  Align-items: center;
+  Justify-content: center;
+  Gap: 3rem;
+  Flex-wrap: wrap;
+}
+
+.grid {
+  Display: grid;
+  Grid-template-columns: repeat(2, 1fr);
+  Gap: 2rem;
+}
+
+.grid-card {
+  Border: 2px solid rgb(128, 0, 53) ;
+  Border-radius: 3rem;
+  Padding: 3rem;
+  Display: flex;
+Flex-direction: column;
+  Align-items: flex-start;
+  Justify-content: flex-start;
+  Cursor: pointer;
+  Transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.grid-card:hover {
+  Transform: scale(1.05);
+  Background: rgb(253, 157, 221);
+  Color: rgb(12, 10, 10);
+}
+
+grid-card I {
+  Font-size: 2.5rem;
+  Margin-bottom: 1rem;
+}
+
+.grid-card span {
+  Font-size: 0.95rem;
+  Font-weight: 650;
+  Background: linear-gradient(to right, #b40e45, #310874);
+  -webkit-background-clip: text;
+  Background-clip: text;
+  Color: transparent;
+}
+
+.grid-card:hover span {
+  Color: rgb(173, 5, 70);
+  Background: none;
+}
+
+.grid-card p {
+  Margin-top: 1rem;
+  Font-size: 1rem;
+  Line-height: 1.5;
+}
+
+.experience-img {
+  Width: 24vw;
+  Border-radius: 3rem;
+  Object-fit: cover;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  Width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  Background: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+  Background: linear-gradient(to bottom,blue, rgb(212, 63, 88));
+  Border-radius: 10px;
+}
+
+.projects {
+  Padding: 4rem 12%;
+}
+
+.projects-grid {
+  Display: grid;
+  Grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  Gap: 2rem;
+}
+
+.project-card {
+  Padding: 3rem 2rem;
+  Display: flex;
+  Flex-direction: column;
+  Align-items: center;
+  Justify-content: center;
+    Text-align: center;
+  Gap: 1rem;
+  Border: 2px solid rgb(116, 8, 58);
+  Border-radius: 3rem;
+  Cursor: pointer;
+  Transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.project-card:hover {
+  Transform: translateY(-10px) scale(1.03);
+  Background: rgb(253, 178, 209);
+  Color: rgb(12, 10, 10);
+}
+
+.project-img {
+  Width: 20vw;
+  Min-width: 180px;
+  Max-width: 260px;
+  Border-radius: 2rem;
+    Object-fit: cover;
+}
+
+.project-card h3 {
+  Font-size: 2rem;
+  Font-weight: 500;
+}
+
+.project-card p {
+  Font-size: 0.95rem;
+  Line-height: 1.5;
+}
+
+.project-card .button-group .btn {
+  Border-color: rgb(177, 6, 34);
+  Color:rgb(45, 6, 53);
+}
+
+.project-card:hover .button-group .btn {
+  Border-color: linear-gradient(to right, #b40e45, #310874); ;
+  Color: rgb(83, 6, 45);
+}
+
+.project-card .button-group .btn:hover {
+  Background: rgb(243, 180, 243);
+  Color:black;
+}
+
+
+.contact {  Padding: 4rem 12% 8rem;
+}
+
+.input-box {
+  Display: flex;
+  Flex-direction: column;
+  Align-items: center;
+  Gap: 2rem;
+  Margin-top: 5rem;
+}
+
+.input {
+  Position: relative;
+  Width: 100%;
+  Max-width: 600px;
+}
+
+.input input {
+  Width: 100%;
+  Padding: 2rem 3rem 2rem 2rem;
+  Border-radius: 3rem;
+  Border: 2px solid black;
+  Font-size: 1.2rem;
+  Outline: none;
+}
+
+.input input::placeholder {
+      Font-size: 1.2rem;
+}
+
+.input I {
+  Position: absolute;
+  Right: 1.5rem;
+  Top: 50%;
+  Transform: translateY(-50%);
+  Font-size: 1.5rem;
+  Color: black;
+}
+
+.footer {
+  Position: fixed;
+  Bottom: 0;
+  Left: 0;
+  Width: 100%;
+  Height: 5rem;
+  Display: flex;
+  Flex-direction: column;
+  Align-items: center;
+  Justify-content: center;
+  Gap: 1rem;
+  Background: white;
+}
+
+.footer-links {
+  Display: flex;
+  Gap: 2rem;
+}
+
+.footer-links a {
+  Color: black;
+  Font-weight: 600;
+  Font-size: 1rem;
+  Position: relative;
+}
+
+.footer-links a::before {
+  Content: “”;
+  Position: absolute;
+  Left: 0;
+  Bottom: -5px;
+  Width: 0;
+  Height: 3px;
+  Border-radius: 5px;
+  Background: linear-gradient(to right, rgb(230, 46, 86),rgb(46, 46, 238));
+  Transition: width 0.3s ease;
+}
+
+@media (max-width: 1280px) {
+  .header {
+    Padding: 0.5rem 1rem;
+    Gap: 1rem;
+  }
+
+  .about-container {
+    Gap: 2rem;
+  }
+
+  .experience-info {
+    Flex-direction: column;
+  }
+
+  .input input {
+    Padding: 1.5rem 3rem 1.5rem 2rem;
+    Font-size: 1rem;
+  }
+
+  .input input::placeholder {
+    Font-size: 1rem;
+  }
+
+  .input I {
+    Font-size: 1.3rem;
+  }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+  .header {
+    Gap: 0.8rem;
+    Padding: 0.5rem 1rem;
+  }
+
+  .logo {
+    Font-size: 1.2rem;
+  }
+
+  .menu-icon {
+    Display: block;
+  }
+
+  .nav-links {
+    Position: absolute;
+    Top: 100%;
+    Left: 0;
+    Width: 100%;
+    Padding: 1rem;
+    Background: rgba(0, 0, 0, 0.9);
+    Border-radius: 1rem;
+    Flex-direction: column;
+    Align-items: center;
+    Display: none;
+  }
+
+  .nav-links.active {
+    Display: flex;
+  }
+
+  .nav-links li {
+    Margin-top: 0.8rem;
+  }
+
+  .visit-btn {
+    Display: none;
+  }
+
+  .input input {
+    Padding: 1.2rem 2.5rem 1.2rem 1.5rem;
+    Font-size: 0.95rem;
+  }
+
+  .input input::placeholder {
+    Font-size: 0.95rem;
+  }
+
+  .input I {
+    Display: none;
+  }
+
+  .grid {
+    Grid-template-columns: 1fr;
+  }
+
+  .experience-img {
+    Width: 60vw;
+  }
+
+  .about-container {
+    Flex-direction: column;
+  }
+
+  .about-img {
+    Width: 50vw;
+  }
+}
+
+/* 600px */
+@media (max-width: 600px) {
+  .header {
+    Padding: 1rem 1.5rem;
+    Gap: 1rem;
+  }
+
+  .logo {
+    Font-size: 1.3rem;
+  }
+
+  .about-img {
+    Width: 70vw;
+  }
+
+  .info-box .text h1 {
+    Font-size: 2.2rem;
+  }
+
+  .job-title {
+    Font-size: 1.6rem;
+  }
+
+  .input {
+    Width: 80%;
+  }
+
+  .input input {
+    Padding: 0.5rem 2rem 0.5rem 1rem;
+    Font-size: 0.9rem;
+  }
+
+  .input input::placeholder {
+    Font-size: 0.9rem;
+  }
+
+  .footer-links {
+    gap: 1rem;
+  }
+}
+
+
+
