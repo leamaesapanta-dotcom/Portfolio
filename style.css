@@ -159,6 +159,13 @@ Ul {
   Background-clip: text;
   Color: transparent;
 }
+.motto {
+  Font-size: 1.2rem;
+  Font-weight: 400;
+  margin-top: 0.5rem;
+  Opacity: 0.9;
+  Max-width: 600px;
+}
 
 .button-group {
   Display: flex;
@@ -207,36 +214,88 @@ Ul {
 }
 
 /* -------------------------
-   Skills section
+   Achievements section
 -------------------------- */
-.skills {
-  padding: 50px 30px;
+.achievements {
+  Padding: 50px 30px;
   max-width: 600px;
   margin: 0 auto;
 }
-
-  .skill-item {
-  margin-bottom: 16px;
- 
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top:2rem;
 }
-  .skill-item span{
+.achievement-card {
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgb(247, 39, 202);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow:2 8px 12px linear-gradient(to bottom, blue, rgb(228, 52, 96));
+}
+.achievement-card h3 {
+  font-size: 1.5rem;
+  color: rgb(198, 115, 247);
+  margin-bottom: 10px;
+}
+.achievement-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgb(60, 60, 60);
+}
+/* -------------------------
+   Skills section
+-------------------------- */
+
+.skills {
+  text-align: center;
+  padding: 50px 30px;
+  max-width: 600px;
+  margin-bottom:5rem;
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+  .skill-card{
+    padding: 2rem;
+    border: linear-gradient (to right (deeppink), (blue));
+    border-radius: 2rem;
+    background-color: lightcoral;
+    transition: trasform 0.3s ease, background 0.3s ease; 
+}
+
+  .skill-card:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, rgb(255, 0, 128), rgb(0, 0, 255));
+  }
+  .skill-card span {
     display: inline-block;
-    margin-bottom: 6px;
+    font-size:1.1rem;
     font-weight: 500;
     color:rgb(10, 10, 10)
 }
 .skill-bar {
-  background:rgb(233, 18, 90);
+  background:rgb(252, 122, 165);
   border-radius: 10px;
-  height: 10px;
+  height: 12px;
   overflow: hidden;
-  margin-top: 6px; 
+
 }
 
 .skill-progress {
   background:violet;
   height: 100%;
   border-radius: 10px;
+  width: 90%; 
 }
 
 
