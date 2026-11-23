@@ -1,669 +1,910 @@
-*{
-  Margin: 0;
-  Padding: 0;
-  Box-sizing: border-box;
-    Font-family: “Poppins”, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-Html {
-  Scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-Body {
-  Background: rgb(248, 225, 198);
-  Color: black;
-} 
-
-a{
-  Text-decoration: none;
+body {
+  background: rgb(248, 225, 198);
+  color: black;
+  padding-bottom: 5rem;
 }
 
-Ul {
-  List-style: none;
+a {
+  text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
+/* -------------------------
+   Header / Navbar
+-------------------------- */
 .header {
-  Position: fixed;
-  Top: 1rem;
-  Left: 50%;
-  Transform: translateX(-50%);
-  Display: flex;
-  Align-items: center;
-  Gap: 1.5rem;
-  Background: rgb(10, 10, 10);
-  Backdrop-filter: blur(8px);
-  Padding: 0.5rem 1.5rem;
-  Border-radius: 3rem;
+  position: fixed;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: rgb(10, 10, 10);
+  backdrop-filter: blur(8px);
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
   z-index: 1000;
 }
 
 .logo {
-  Color: rgb(196, 13, 98);
-  Font-size: 1.4rem;
-  Font-weight: 600;
-  White-space: nowrap;
-  Transition: transform 0.3s ease;
+  color: rgb(196, 13, 98);
+  font-size: 1.4rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: transform 0.3s ease;
 }
 
 .logo:hover {
-  Transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .logo span {
-  Background: linear-gradient(to right, rgb(201, 6, 87), rgb(81, 81, 248));
+  background: linear-gradient(to right, rgb(201, 6, 87), rgb(81, 81, 248));
   -webkit-background-clip: text;
-  Background-clip: text;
-  Color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
-.nav-links  {
-  Display: flex;
-  Gap: 1.5rem;
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
 }
-
 
 .nav-links li a {
-  Position: relative;
-  Color: rgb(223, 49, 194) ;
-  Font-weight: 300;
-  Transition: color 0.3s ease;
+  position: relative;
+  color: rgb(223, 49, 194);
+  font-weight: 300;
+  transition: color 0.3s ease;
 }
 
 .nav-links li a::before {
-  Content: “”;
-  Position: absolute;
-  Left: 0;
-  Top: 25px;
-  Width: 0;
-  Height: 5px;
-  Border-radius: 5px;
-  Background: linear-gradient(to right, rgb(214, 64, 89), rgb(52, 52, 243));
-  Transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 25px;
+  width: 0;
+  height: 5px;
+  border-radius: 5px;
+  background: linear-gradient(to right, rgb(214, 64, 89), rgb(52, 52, 243));
+  transition: width 0.3s ease;
 }
 
 .nav-links li a:hover::before {
-  Width: 100%;
+  width: 100%;
 }
 
 .visit-btn {
-  Padding: 0.8rem 1.5rem;
-  Border-radius: 3rem;
-  Border: none;
-  Background: linear-gradient(to right,rgb(182, 18, 81), rgb(69, 2, 194));
-  Color: rgb(255, 255, 255);
-  Font-weight: 500;
-  Font-size: 1rem;
-  Cursor: pointer;
-  White-space: nowrap;
-  Transition: transform 0.3s ease, background 0.3s ease;
+  padding: 0.8rem 1.5rem;
+  border-radius: 3rem;
+  border: none;
+  background: linear-gradient(to right, rgb(182, 18, 81), rgb(69, 2, 194));
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 .visit-btn:hover {
-  Transform: scale(1.05);
-  Background: linear-gradient(to right, rgb(252, 177, 143) , rgb(245, 0, 0) );
+  transform: scale(1.05);
+  background: linear-gradient(to right, rgb(252, 177, 143), rgb(245, 0, 0));
 }
 
 .menu-icon {
-  Display: none;
-  Color: white;
-  Font-size: 1.5rem;
-  Cursor: pointer;
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 /* -------------------------
    About Section
 -------------------------- */
 .about {
-  Min-height: 100vh;
-  Padding: 8rem 12% 4rem;
-  Width: 100%;
-  Position: relative;
+  min-height: 100vh;
+  padding: 8rem 12% 4rem;
+  width: 100%;
+  position: relative;
 }
 
 .about-container {
-  Display: flex;
-  Align-items: center;
-  Justify-content: center;
-  Gap: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .about-img {
-  Width: 30vw;
-  Border-radius: 50%;
-  Object-fit: cover;
+  width: 30vw;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgb(214, 30, 116);
 }
 
 .info-box {
-  Display: flex;
-  Flex-direction: column;
-  Align-items: center;
-  Text-align: center;
-  Gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.5rem;
 }
 
 .info-box .text h3 {
-  Font-size: 1.5rem;
-  Font-weight: 400;
-  Opacity: 0.8;
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.8;
 }
 
 .info-box .text h1 {
-  Font-size: 3rem;
-  Font-weight: 700;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .job-title {
-  Font-size: 2rem;
-  Background: linear-gradient(to right, blue, rgb(223, 73, 98) );
+  font-size: 2rem;
+  font-weight: 600;
+  background: linear-gradient(to right, blue, rgb(223, 73, 98));
   -webkit-background-clip: text;
-  Background-clip: text;
-  Color: transparent;
+  background-clip: text;
+  color: transparent;
 }
+
 .motto {
-  Font-size: 1.2rem;
-  Font-weight: 400;
+  font-size: 1.2rem;
+  font-weight: 400;
   margin-top: 0.5rem;
-  Opacity: 0.9;
-  Max-width: 600px;
+  opacity: 0.9;
+  max-width: 600px;
 }
 
 .button-group {
-  Display: flex;
-  Gap: 1rem;
-  Flex-wrap: wrap;
-  Justify-content: center;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .btn {
-  Padding: 0.5rem 1.5rem;
-  Border-radius: 3rem;
-  Border: 2px solid rgb(214, 30, 116);
-  Background: transparent;
-  Color:rgb(5, 5, 5);
-  Font-weight: 500;
-  Cursor: pointer;
-  White-space: nowrap;
-  Transition: all 0.3s ease;
+  padding: 0.5rem 1.5rem;
+  border-radius: 3rem;
+  border: 2px solid rgb(214, 30, 116);
+  background: transparent;
+  color: rgb(5, 5, 5);
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s ease;
 }
 
-.btn:hover { 
-  Background:black;
-  Color: rgb(240, 39, 163);
+.btn:hover {
+  background: black;
+  color: rgb(240, 39, 163);
 }
 
 .socials {
-  Display: flex;
-  Gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .socials a {
-  Color: rgb(0, 0, 0);
-  Font-size: 1.5rem;
-  Transition: transform 0.3s ease;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
 }
 
 .socials a:hover {
-  Transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .section-title {
-  Text-align: center;
-  Font-size: 2.5rem;
-  Font-weight: 700;
-  Margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.section-title span {
+  color: rgb(214, 30, 116);
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 0.95rem;
+  color: rgb(75, 75, 75);
+  margin-top: -1rem;
+  margin-bottom: 2.5rem;
 }
 
 /* -------------------------
-   Achievements section
+   Achievements Section
 -------------------------- */
 .achievements {
-  Padding: 50px 30px;
-  max-width: 600px;
+  padding: 4rem 12%;
+  max-width: 1100px;
   margin: 0 auto;
 }
+
 .achievement-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  margin-top:2rem;
+  margin-top: 2rem;
 }
+
 .achievement-card {
-  border-radius: 10px;
-  padding: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid rgb(214, 30, 116);
+  border-radius: 2rem;
+  padding: 2rem;
   text-align: center;
-  box-shadow: 0 4px 6px rgb(247, 39, 202);
+  box-shadow: 0 4px 12px rgba(247, 39, 202, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .achievement-card:hover {
   transform: translateY(-5px);
-  box-shadow:2 8px 12px linear-gradient(to bottom, blue, rgb(228, 52, 96));
+  box-shadow: 0 8px 20px rgba(228, 52, 96, 0.35);
 }
+
+.achievement-card i {
+  font-size: 2.2rem;
+  color: rgb(196, 13, 98);
+  margin-bottom: 0.8rem;
+}
+
 .achievement-card h3 {
-  font-size: 1.5rem;
-  color: rgb(198, 115, 247);
+  font-size: 1.3rem;
+  color: rgb(153, 50, 90);
   margin-bottom: 10px;
 }
+
 .achievement-card p {
-  font-size: 1rem;
+  font-size: 0.95rem;
   line-height: 1.5;
   color: rgb(60, 60, 60);
 }
-/* -------------------------
-   Skills section
--------------------------- */
 
+/* -------------------------
+   Skills Section (3-Column Cards)
+-------------------------- */
 .skills {
-  text-align: center;
-  padding: 50px 30px;
-  max-width: 600px;
-  margin-bottom:5rem;
-}
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  max-width: 900px;
+  padding: 4rem 12%;
+  max-width: 1100px;
   margin: 0 auto;
 }
-  .skill-card{
-    padding: 2rem;
-    border: linear-gradient (to right (deeppink), (blue));
-    border-radius: 2rem;
-    background-color: lightcoral;
-    transition: trasform 0.3s ease, background 0.3s ease; 
+
+.skills-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
-  .skill-card:hover {
-    transform: scale(1.05);
-    background: linear-gradient(to right, rgb(255, 0, 128), rgb(0, 0, 255));
-  }
-  .skill-card span {
-    display: inline-block;
-    font-size:1.1rem;
-    font-weight: 500;
-    color:rgb(10, 10, 10)
-}
-.skill-bar {
-  background:rgb(252, 122, 165);
-  border-radius: 10px;
-  height: 12px;
-  overflow: hidden;
-
+.skill-box-card {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(214, 30, 116, 0.25);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.skill-progress {
-  background:violet;
-  height: 100%;
-  border-radius: 10px;
-  width: 90%; 
+.skill-box-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(214, 30, 116, 0.18);
 }
 
+.skill-card-icon {
+  font-size: 2.2rem;
+  color: rgb(214, 30, 116);
+  margin-bottom: 0.9rem;
+}
 
+.skill-box-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: rgb(20, 20, 20);
+  margin-bottom: 0.4rem;
+}
 
+.skill-box-card p {
+  font-size: 0.88rem;
+  color: rgb(95, 95, 95);
+  line-height: 1.45;
+}
 
 /* -------------------------
    Experience Section
 -------------------------- */
 .experience {
-  Padding: 4rem 12%;
+  padding: 4rem 12%;
 }
 
 .experience-info {
-  Display: flex;
-  Align-items: center;
-  Justify-content: center;
-  Gap: 3rem;
-  Flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
 .grid {
-  Display: grid;
-  Grid-template-columns: repeat(2, 1fr);
-  Gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 .grid-card {
-  Border: 2px solid rgb(128, 0, 53) ;
-  Border-radius: 3rem;
-  Padding: 3rem;
-  Display: flex;
-Flex-direction: column;
-  Align-items: flex-start;
-  Justify-content: flex-start;
-  Cursor: pointer;
-  Transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+  border: 2px solid rgb(128, 0, 53);
+  border-radius: 3rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
 }
 
 .grid-card:hover {
-  Transform: scale(1.05);
-  Background: rgb(253, 157, 221);
-  Color: rgb(12, 10, 10);
+  transform: scale(1.05);
+  background: rgb(253, 157, 221);
+  color: rgb(12, 10, 10);
 }
 
-grid-card I {
-  Font-size: 2.5rem;
-  Margin-bottom: 1rem;
+.grid-card i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: rgb(182, 18, 81);
 }
 
 .grid-card span {
-  Font-size: 0.95rem;
-  Font-weight: 650;
-  Background: linear-gradient(to right, #b40e45, #310874);
+  font-size: 0.95rem;
+  font-weight: 650;
+  background: linear-gradient(to right, #b40e45, #310874);
   -webkit-background-clip: text;
-  Background-clip: text;
-  Color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .grid-card:hover span {
-  Color: rgb(173, 5, 70);
-  Background: none;
+  color: rgb(173, 5, 70);
+  background: none;
 }
 
 .grid-card p {
-  Margin-top: 1rem;
-  Font-size: 1rem;
-  Line-height: 1.5;
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .experience-img {
-  Width: 24vw;
-  Border-radius: 3rem;
-  Object-fit: cover;
+  width: 24vw;
+  border-radius: 3rem;
+  object-fit: cover;
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  Width: 20px;
+  width: 14px;
 }
 
 ::-webkit-scrollbar-track {
-  Background: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
 }
 
 ::-webkit-scrollbar-thumb {
-  Background: linear-gradient(to bottom,blue, rgb(212, 63, 88));
-  Border-radius: 10px;
+  background: linear-gradient(to bottom, blue, rgb(212, 63, 88));
+  border-radius: 10px;
 }
 
+/* -------------------------
+   Projects Section
+-------------------------- */
 .projects {
-  Padding: 4rem 12%;
+  padding: 4rem 12%;
 }
 
 .projects-grid {
-  Display: grid;
-  Grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  Gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
 .project-card {
-  Padding: 3rem 2rem;
-  Display: flex;
-  Flex-direction: column;
-  Align-items: center;
-  Justify-content: center;
-    Text-align: center;
-  Gap: 1rem;
-  Border: 2px solid rgb(116, 8, 58);
-  Border-radius: 3rem;
-  Cursor: pointer;
-  Transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  border: 2px solid rgb(116, 8, 58);
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
 }
 
 .project-card:hover {
-  Transform: translateY(-10px) scale(1.03);
-  Background: rgb(253, 178, 209);
-  Color: rgb(12, 10, 10);
+  transform: translateY(-10px) scale(1.03);
+  background: rgb(253, 178, 209);
+  color: rgb(12, 10, 10);
 }
 
 .project-img {
-  Width: 20vw;
-  Min-width: 180px;
-  Max-width: 260px;
-  Border-radius: 2rem;
-    Object-fit: cover;
+  width: 20vw;
+  min-width: 180px;
+  max-width: 260px;
+  height: 180px;
+  border-radius: 2rem;
+  object-fit: cover;
 }
 
 .project-card h3 {
-  Font-size: 2rem;
-  Font-weight: 500;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .project-card p {
-  Font-size: 0.95rem;
-  Line-height: 1.5;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .project-card .button-group .btn {
-  Border-color: rgb(177, 6, 34);
-  Color:rgb(45, 6, 53);
+  border-color: rgb(177, 6, 34);
+  color: rgb(45, 6, 53);
 }
 
 .project-card:hover .button-group .btn {
-  Border-color: linear-gradient(to right, #b40e45, #310874); ;
-  Color: rgb(83, 6, 45);
+  border-color: #b40e45;
+  color: rgb(83, 6, 45);
 }
 
 .project-card .button-group .btn:hover {
-  Background: rgb(243, 180, 243);
-  Color:black;
+  background: rgb(243, 180, 243);
+  color: black;
 }
 
-
-.contact {  Padding: 4rem 12% 8rem;
+/* -------------------------
+   Contact Section (3-Column Cards)
+-------------------------- */
+.contact {
+  padding: 4rem 12% 6rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.input-box {
-  Display: flex;
-  Flex-direction: column;
-  Align-items: center;
-  Gap: 2rem;
-  Margin-top: 5rem;
+.contact-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
-.input {
-  Position: relative;
-  Width: 100%;
-  Max-width: 600px;
+.contact-box-card {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(214, 30, 116, 0.25);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.input input {
-  Width: 100%;
-  Padding: 2rem 3rem 2rem 2rem;
-  Border-radius: 3rem;
-  Border: 2px solid black;
-  Font-size: 1.2rem;
-  Outline: none;
+.contact-box-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(214, 30, 116, 0.18);
 }
 
-.input input::placeholder {
-      Font-size: 1.2rem;
+.contact-card-icon {
+  font-size: 2rem;
+  color: rgb(214, 30, 116);
+  margin-bottom: 0.9rem;
 }
 
-.input I {
-  Position: absolute;
-  Right: 1.5rem;
-  Top: 50%;
-  Transform: translateY(-50%);
-  Font-size: 1.5rem;
-  Color: black;
+.contact-box-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: rgb(20, 20, 20);
+  margin-bottom: 0.4rem;
 }
 
+.contact-box-card p {
+  font-size: 0.88rem;
+  color: rgb(95, 95, 95);
+  word-break: break-word;
+}
+
+/* -------------------------
+   Footer
+-------------------------- */
 .footer {
-  Position: fixed;
-  Bottom: 0;
-  Left: 0;
-  Width: 100%;
-  Height: 5rem;
-  Display: flex;
-  Flex-direction: column;
-  Align-items: center;
-  Justify-content: center;
-  Gap: 1rem;
-  Background: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  background: white;
+  z-index: 900;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .footer-links {
-  Display: flex;
-  Gap: 2rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .footer-links a {
-  Color: black;
-  Font-weight: 600;
-  Font-size: 1rem;
-  Position: relative;
+  color: black;
+  font-weight: 600;
+  font-size: 0.95rem;
+  position: relative;
 }
 
 .footer-links a::before {
-  Content: “”;
-  Position: absolute;
-  Left: 0;
-  Bottom: -5px;
-  Width: 0;
-  Height: 3px;
-  Border-radius: 5px;
-  Background: linear-gradient(to right, rgb(230, 46, 86),rgb(46, 46, 238));
-  Transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  border-radius: 5px;
+  background: linear-gradient(to right, rgb(230, 46, 86), rgb(46, 46, 238));
+  transition: width 0.3s ease;
 }
 
+.footer-links a:hover::before {
+  width: 100%;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+/* -------------------------
+   Flower Shop Modal Styles
+-------------------------- */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modal-overlay.open {
+  display: flex;
+}
+
+.modal-box {
+  background: #fff0f5;
+  width: 100%;
+  max-width: 920px;
+  max-height: 90vh;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgb(219, 112, 147);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.modal-top-bar {
+  background: #111;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-tabs {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.tab-btn {
+  background: #2a2a2a;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+.tab-btn.active {
+  background: linear-gradient(to right, rgb(201, 6, 87), rgb(81, 81, 248));
+}
+
+.close-modal {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-content-area {
+  padding: 1.2rem;
+  overflow-y: auto;
+}
+
+.fs-header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.fs-header h2 {
+  font-family: Georgia, serif;
+  color: rgb(153, 50, 90);
+  font-size: 1.8rem;
+}
+
+.fs-header p {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.fs-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.fs-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fs-fieldset {
+  background: #fff;
+  border: 2px solid rgb(219, 112, 147);
+  border-radius: 0.6rem;
+  padding: 0.9rem;
+}
+
+.fs-fieldset legend {
+  color: rgb(153, 50, 90);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0 0.4rem;
+}
+
+.fs-row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.fs-row label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.fs-row input,
+.fs-row select {
+  padding: 0.35rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.fs-desc-text {
+  font-size: 0.82rem;
+  color: rgb(153, 50, 90);
+  font-weight: 500;
+}
+
+.fs-records-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.fs-records-box textarea {
+  width: 100%;
+  height: 100%;
+  min-height: 290px;
+  border: 1px solid #e0c3ce;
+  background: rgb(255, 250, 252);
+  padding: 0.6rem;
+  font-family: monospace;
+  font-size: 0.8rem;
+  resize: none;
+}
+
+.fs-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.fs-btn {
+  background: rgb(219, 112, 147);
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.fs-btn:hover {
+  background: rgb(153, 50, 90);
+}
+
+.file-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.file-pill {
+  background: #fff;
+  border: 1px solid rgb(219, 112, 147);
+  color: rgb(153, 50, 90);
+  padding: 0.3rem 0.7rem;
+  border-radius: 1rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.file-pill.active {
+  background: rgb(153, 50, 90);
+  color: #fff;
+}
+
+.code-viewer {
+  background: #1e1e2e;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  font-family: monospace;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  max-height: 55vh;
+  overflow: auto;
+}
+
+/* -------------------------
+   Responsive Media Queries
+-------------------------- */
 @media (max-width: 1280px) {
   .header {
-    Padding: 0.5rem 1rem;
-    Gap: 1rem;
+    padding: 0.5rem 1rem;
+    gap: 1rem;
   }
 
   .about-container {
-    Gap: 2rem;
+    gap: 2rem;
   }
 
   .experience-info {
-    Flex-direction: column;
-  }
-
-  .input input {
-    Padding: 1.5rem 3rem 1.5rem 2rem;
-    Font-size: 1rem;
-  }
-
-  .input input::placeholder {
-    Font-size: 1rem;
-  }
-
-  .input I {
-    Font-size: 1.3rem;
+    flex-direction: column;
   }
 }
 
-/* 768px */
 @media (max-width: 768px) {
   .header {
-    Gap: 0.8rem;
-    Padding: 0.5rem 1rem;
+    gap: 0.8rem;
+    padding: 0.5rem 1rem;
   }
 
   .logo {
-    Font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
   .menu-icon {
-    Display: block;
+    display: block;
   }
 
   .nav-links {
-    Position: absolute;
-    Top: 100%;
-    Left: 0;
-    Width: 100%;
-    Padding: 1rem;
-    Background: rgba(0, 0, 0, 0.9);
-    Border-radius: 1rem;
-    Flex-direction: column;
-    Align-items: center;
-    Display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.95);
+    border-radius: 1rem;
+    flex-direction: column;
+    align-items: center;
+    display: none;
   }
 
   .nav-links.active {
-    Display: flex;
+    display: flex;
   }
 
   .nav-links li {
-    Margin-top: 0.8rem;
+    margin-top: 0.6rem;
   }
 
   .visit-btn {
-    Display: none;
+    display: none;
   }
 
-  .input input {
-    Padding: 1.2rem 2.5rem 1.2rem 1.5rem;
-    Font-size: 0.95rem;
-  }
-
-  .input input::placeholder {
-    Font-size: 0.95rem;
-  }
-
-  .input I {
-    Display: none;
-  }
-
-  .grid {
-    Grid-template-columns: 1fr;
+  .grid,
+  .skills-card-grid,
+  .contact-card-grid,
+  .fs-body {
+    grid-template-columns: 1fr;
   }
 
   .experience-img {
-    Width: 60vw;
+    width: 60vw;
   }
 
   .about-container {
-    Flex-direction: column;
+    flex-direction: column;
   }
 
   .about-img {
-    Width: 50vw;
+    width: 50vw;
   }
 }
 
-/* 600px */
 @media (max-width: 600px) {
   .header {
-    Padding: 1rem 1.5rem;
-    Gap: 1rem;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
   }
 
   .logo {
-    Font-size: 1.3rem;
+    font-size: 1.3rem;
   }
 
   .about-img {
-    Width: 70vw;
+    width: 70vw;
   }
 
   .info-box .text h1 {
-    Font-size: 2.2rem;
+    font-size: 2.2rem;
   }
 
   .job-title {
-    Font-size: 1.6rem;
-  }
-
-  .input {
-    Width: 80%;
-  }
-
-  .input input {
-    Padding: 0.5rem 2rem 0.5rem 1rem;
-    Font-size: 0.9rem;
-  }
-
-  .input input::placeholder {
-    Font-size: 0.9rem;
+    font-size: 1.6rem;
   }
 
   .footer-links {
-    gap: 1rem;
+    gap: 0.8rem;
+  }
+
+  .footer-links a {
+    font-size: 0.8rem;
   }
 }
-
-
-

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio – Lea Mae Sapanta</title>
 
   <!-- Font Awesome -->
@@ -27,10 +28,10 @@
       <span>Lea Mae</span> Sapanta
     </a>
 
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="#about">About</a></li>
-       <li><a href="#achievements">Achievements</a></li>
-     <li><a href="#skills">Skills</a>li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -47,7 +48,7 @@
   <section id="about" class="about">
     <div class="about-container">  
       <img
-        src="IMG_20260523_212457_245.png"
+        src="c:\profile ni lea\1795403252037[1].png"
         alt="Lea Mae Sapanta"
         class="about-img"
       />
@@ -57,9 +58,9 @@
           <h3>Hello, I’m</h3>
           <h1>Lea Mae Sapanta</h1>
           <span class="job-title">Web Developer</span>
-         <p class="motto">
-           "I'm  a Computer Science student who believes that every line of code and every word written is a chance to create something meaningful for others."
-         </p>
+          <p class="motto">
+            "I'm a Computer Science student who believes that every line of code and every word written is a chance to create something meaningful for others."
+          </p>
         </div>
 
         <div class="button-group">
@@ -68,10 +69,10 @@
         </div>
 
         <div class="socials">
-          <a href="https://github.com/" target="_blank">
+          <a href="https://github.com/" target="_blank" aria-label="GitHub">
             <i class="fa-brands fa-github"></i>
           </a>
-          <a href="https://www.linkedin.com/" target="_blank">
+          <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
@@ -79,55 +80,72 @@
     </div>
   </section>
 
- <!-- Achievements Section -->
+  <!-- Achievements Section -->
   <section id="achievements" class="achievements">
     <h2 class="section-title">Achievements</h2>
 
-    <div class="achievements-grid">
+    <div class="achievement-grid">
       <!-- Achievement 1 -->
       <div class="achievement-card">
         <i class="fa-solid fa-trophy"></i>
-        <span>National Certificate II in CSS </span>
-        <p>Recognized for completed the competency requirments under the Philippine TVET 4 core Compentency Assessment </p>
+        <h3>National Certificate II in CSS</h3>
+        <p>Recognized for completing the competency requirements under the Philippine TVET 4 Core Competency Assessment.</p>
       </div>
 
-      <!-- Achievement 2-->
+      <!-- Achievement 2 -->
       <div class="achievement-card">
         <i class="fa-solid fa-award"></i>
-        <span>Community Service Recognition</span>
+        <h3>Community Service Recognition</h3>
         <p>Honored for dedicated volunteer work and positive impact on the local community.</p>
       </div>
     </div>
+  </section>
 
   <!-- Skills Section -->
-   <section id="skills" class="skills">
-    <h2> My Skills</h2>
+  <section id="skills" class="skills">
+    <h2 class="section-title">My <span>Skills</span></h2>
+    <p class="section-subtitle">
+      These are some of the programming languages and skills I have learned and practiced.
+    </p>
 
-    <div class="skill-item">
-      <span>HTML/CSS</span>
-      <div class="skill-bar"></div>
-        <div class="skill-progress">
-        </div>
+    <div class="skills-card-grid">
+      <div class="skill-box-card">
+        <i class="fa-brands fa-java skill-card-icon"></i>
+        <h3>Java</h3>
+        <p>Basic programming and system development.</p>
+      </div>
 
-    <div class="skill-item">
-      <span>JavaScript</span>
-      <div class="skill-bar"></div>
-        <div class="skill-progress">
-        </div>
-<div class="skill-item"></div>
-      <span>Problem solving</span>
-      <div class="skill-bar"></div>
-        <div class="skill-progress">
-        </div>
-         
-     <div class="skill-item"></div>
-      <span>Communication</span>
-      <div class="skill-bar"></div>
-        <div class="skill-progress">
+      <div class="skill-box-card">
+        <i class="fa-solid fa-code skill-card-icon"></i>
+        <h3>C++</h3>
+        <p>Programming fundamentals and problem-solving.</p>
+      </div>
+
+      <div class="skill-box-card">
+        <i class="fa-brands fa-python skill-card-icon"></i>
+        <h3>Python</h3>
+        <p>Basic programming and logical thinking.</p>
+      </div>
+
+      <div class="skill-box-card">
+        <i class="fa-brands fa-js skill-card-icon"></i>
+        <h3>JavaScript</h3>
+        <p>Basic website interactivity and functionality.</p>
+      </div>
+
+      <div class="skill-box-card">
+        <i class="fa-brands fa-html5 skill-card-icon"></i>
+        <h3>HTML</h3>
+        <p>Creating and structuring web pages.</p>
+      </div>
+
+      <div class="skill-box-card">
+        <i class="fa-brands fa-css3-alt skill-card-icon"></i>
+        <h3>CSS</h3>
+        <p>Styling and designing web pages.</p>
+      </div>
     </div>
-    
-   </section>
-
+  </section>
 
   <!-- Experience Section -->
   <section id="experience" class="experience">
@@ -143,7 +161,6 @@
             Building responsive and modern user interfaces using HTML, CSS, and JavaScript.
           </p>
         </div>
-        
 
         <!-- Card 2 -->
         <div class="grid-card">
@@ -174,7 +191,7 @@
       </div>
 
       <img
-        src="IMG_20260523_212457_245.png"
+        src="1795403252037[1].png"
         alt="Lea Mae Sapanta"
         class="experience-img"
       />
@@ -192,12 +209,13 @@
           src="Flower_Shop_system.js/Flower_Shop"
           alt="Flower Shop System"
           class="project-img"
+          onerror="this.src='https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=400&q=80'"
         />
         <h3>Flower Shop System</h3>
-        <p>Java-based system for managing flower shop inventory and sales.</p>
+        <p>Java Swing OOP system for managing flower shop purchases, pricing, and file records[cite: 6, 8].</p>
         <div class="button-group">
-          <a href="#" class="btn">Live Demo</a>
-          <a href="#" class="btn">View Code</a>
+          <button type="button" class="btn" onclick="openFlowerModal('demo')">Live Demo</button>
+          <button type="button" class="btn" onclick="openFlowerModal('code')">View Code</button>
         </div>
       </div>
 
@@ -207,12 +225,13 @@
           src="student-portfolio-website.png"
           alt="Student Portfolio Website"
           class="project-img"
+          onerror="this.src='https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80'"
         />
         <h3>Student Portfolio Website</h3>
         <p>Responsive personal portfolio website built with HTML, CSS, and JavaScript.</p>
         <div class="button-group">
-          <a href="#" class="btn">Live Demo</a>
-          <a href="#" class="btn">View Code</a>
+          <a href="#about" class="btn">Live Demo</a>
+          <a href="https://github.com/" target="_blank" class="btn">View Code</a>
         </div>
       </div>
     </div>
@@ -220,16 +239,30 @@
 
   <!-- Contact Section -->
   <section id="contact" class="contact">
-    <h2 class="section-title">Contact Me</h2>
+    <h2 class="section-title">Contact <span>Me</span></h2>
+    <p class="section-subtitle">
+      Feel free to contact me for questions, collaboration, or other opportunities.
+    </p>
 
-    <div class="input-box">
-      <div class="input">
-        <input type="email" placeholder="Enter your email" />
-        <i class="fa-solid fa-envelope"></i>
-      </div>
-      <a href="tel:+639153245973" class="btn">Call Me</a>
-      <a href="mailto:leamaesapanta@gmail.com" class="btn">Send Message</a>
-    </div>   
+    <div class="contact-card-grid">
+      <a href="mailto:leamaesapanta@gmail.com" class="contact-box-card">
+        <i class="fa-solid fa-envelope contact-card-icon"></i>
+        <h3>Email</h3>
+        <p>leamaesapanta@gmail.com</p>
+      </a>
+
+      <a href="https://github.com/" target="_blank" class="contact-box-card">
+        <i class="fa-brands fa-github contact-card-icon"></i>
+        <h3>GitHub</h3>
+        <p>Visit my GitHub: https://github.com/leamaesapanta</p>
+      </a>
+
+      <a href="https://www.linkedin.com/" target="_blank" class="contact-box-card">
+        <i class="fa-brands fa-linkedin contact-card-icon"></i>
+        <h3>LinkedIn</h3>
+        <p>Visit my LinkedIn: https://www.linkedin.com/in/leamaesapanta</p>
+      </a>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -247,7 +280,422 @@
     </p>
   </footer>
 
+  <!-- Interactive Modal for Flower Shop Inventory System -->
+  <div id="flower-modal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-top-bar">
+        <div class="modal-tabs">
+          <button type="button" class="tab-btn active" id="tab-demo" onclick="switchModalTab('demo')">
+            <i class="fa-solid fa-desktop"></i> Interactive Demo
+          </button>
+          <button type="button" class="tab-btn" id="tab-code" onclick="switchModalTab('code')">
+            <i class="fa-solid fa-code"></i> Java Source Code (8 Files)
+          </button>
+        </div>
+        <button type="button" class="close-modal" onclick="closeFlowerModal()">&times;</button>
+      </div>
+
+      <!-- TAB 1: Interactive Simulation of FlowerShop.java -->
+      <div id="modal-demo-view" class="modal-content-area">
+        <div class="fs-app">
+          <div class="fs-header">
+            <h2>🌸 FLOWER SHOP INVENTORY 🌸</h2>
+            <p>Flower Purchase and Management System</p>
+          </div>
+
+          <div class="fs-body">
+            <!-- Left Forms -->
+            <div class="fs-left">
+              <fieldset class="fs-fieldset">
+                <legend>Buyer Information</legend>
+                <div class="fs-row">
+                  <label for="fs-buyer">Buyer Name:</label>
+                  <input type="text" id="fs-buyer" placeholder="e.g. Maria Clara" />
+                </div>
+                <div class="fs-row">
+                  <label for="fs-contact">Contact Number:</label>
+                  <input type="text" id="fs-contact" placeholder="e.g. 09123456789" />
+                </div>
+              </fieldset>
+
+              <fieldset class="fs-fieldset">
+                <legend>Flower Information</legend>
+                <div class="fs-row">
+                  <label for="fs-flower">Select Flower:</label>
+                  <select id="fs-flower" onchange="updateFlowerShopUI()">
+                    <option value="Lily">Lily</option>
+                    <option value="Rose">Rose</option>
+                    <option value="Sunflower">Sunflower</option>
+                    <option value="Tulips">Tulips</option>
+                  </select>
+                </div>
+                <div class="fs-row">
+                  <label for="fs-color">Flower Color:</label>
+                  <select id="fs-color">
+                    <option value="Pink">Pink</option>
+                    <option value="Red">Red</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Violet">Violet</option>
+                  </select>
+                </div>
+                <div class="fs-row">
+                  <label for="fs-size">Flower Size:</label>
+                  <select id="fs-size">
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                  </select>
+                </div>
+                <div class="fs-row">
+                  <label for="fs-price">Flower Price:</label>
+                  <input type="text" id="fs-price" readonly />
+                </div>
+                <div class="fs-row">
+                  <label>Description:</label>
+                  <span id="fs-desc" class="fs-desc-text">Elegant and fragrant flower.</span>
+                </div>
+              </fieldset>
+            </div>
+
+            <!-- Right Records Area -->
+            <div class="fs-right">
+              <fieldset class="fs-fieldset fs-records-box">
+                <legend>Purchase Records (flowers.txt)</legend>
+                <textarea id="fs-records" readonly></textarea>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="fs-actions">
+            <button type="button" class="fs-btn" onclick="purchaseFlower()">PURCHASE</button>
+            <button type="button" class="fs-btn" onclick="clearFlowerForm()">CLEAR</button>
+            <button type="button" class="fs-btn" onclick="loadFlowerRecords()">VIEW RECORDS</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: Java Source Code Viewer -->
+      <div id="modal-code-view" class="modal-content-area" style="display: none;">
+        <div class="file-selector" id="java-file-tabs">
+          <button type="button" class="file-pill active" onclick="showJavaFile('FlowerShop.java', this)">Main/FlowerShop.java</button>
+          <button type="button" class="file-pill" onclick="showJavaFile('Buyer.java', this)">Main/Buyer.java</button>
+          <button type="button" class="file-pill" onclick="showJavaFile('Flower.java', this)">Flower_Type/Flower.java</button>
+          <button type="button" class="file-pill" onclick="showJavaFile('Flower_Lily.java', this)">Flower_Lily.java</button>
+          <button type="button" class="file-pill" onclick="showJavaFile('Flower_Rose.java', this)">Flower_Rose.java</button>
+          <button type="button" class="file-pill" onclick="showJavaFile('Flower_Sunflower.java', this)">Flower_Sunflower.java</button>
+          <button type="button" class="file-pill" onclick="showJavaFile('Flower_Tulips.java', this)">Flower_Tulips.java</button>
+          <button type="button" class="file-pill" onclick="showJavaFile('FlowerFileHandler.java', this)">FlowerFileHandler.java</button>
+        </div>
+        <pre class="code-viewer"><code id="java-code-display"></code></pre>
+      </div>
+    </div>
+  </div>
+
   <!-- JavaScript -->
-  <script src="script.js"></script>
+  <script>
+    // Mobile Menu Toggle
+    const menuIcon = document.getElementById("menu-icon");
+    const navLinks = document.getElementById("nav-links");
+
+    if (menuIcon && navLinks) {
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+        });
+      });
+    }
+
+    // Flower Shop Management System Simulation
+    const flowerCatalog = {
+      Lily: {
+        color: "Pink",
+        size: "Small",
+        price: "150.0",
+        description: "Elegant and fragrant flower.",
+      },
+      Rose: {
+        color: "Red",
+        size: "Large",
+        price: "160.0",
+        description: "Beautiful and romantic flower.",
+      },
+      Sunflower: {
+        color: "Yellow",
+        size: "Large",
+        price: "190.0",
+        description: "Bright flower that faces the sun.",
+      },
+      Tulips: {
+        color: "Violet",
+        size: "Small",
+        price: "120.0",
+        description: "Colorful and elegant flower.",
+      },
+    };
+
+    const javaSourceFiles = {
+      "FlowerShop.java": `package Main;
+
+import Flower_Type.*;
+import javax.swing.*;
+import javax.swing.border.*;
+import java.awt.*;
+import java.io.IOException;
+
+public class FlowerShop {
+    private static JTextField buyerNameField, contactField, priceField;
+    private static JComboBox<String> flowerCombo, colorCombo, sizeCombo;
+    private static JTextArea recordsArea;
+    private static JLabel descriptionLabel;
+    private static JFrame frame;
+
+    private static final Color PINK = new Color(219, 112, 147);
+    private static final Color LIGHT_PINK = new Color(255, 240, 245);
+    private static final Color DARK_PINK = new Color(153, 50, 90);
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> createGUI());
+    }
+
+    private static Flower createFlower(String name) throws IOException {
+        switch (name) {
+            case "Lily": return new Flower_Lily();
+            case "Rose": return new Flower_Rose();
+            case "Sunflower": return new Flower_Sunflower();
+            case "Tulips": return new Flower_Tulips();
+            default: throw new IllegalArgumentException("Invalid flower selection.");
+        }
+    }
+}`,
+      "Buyer.java": `package Main;
+
+public class Buyer {
+    private String buyerName;
+    private String contactNumber;
+
+    public Buyer(String buyerName, String contactNumber) {
+        if (buyerName == null || buyerName.trim().isEmpty()) {
+            throw new IllegalArgumentException("Buyer name cannot be empty.");
+        }
+        if (contactNumber == null || contactNumber.trim().isEmpty()) {
+            throw new IllegalArgumentException("Contact number cannot be empty.");
+        }
+        this.buyerName = buyerName.trim();
+        this.contactNumber = contactNumber.trim();
+    }
+
+    public String getBuyerName() { return buyerName; }
+    public String getContactNumber() { return contactNumber; }
+}`,
+      "Flower.java": `package Flower_Type;
+
+import java.io.IOException;
+
+public class Flower {
+    private String name;
+    private String color;
+    private double price;
+    private String size;
+
+    public Flower(String name, String color, double price, String size) throws IOException {
+        if (name == null || name.trim().isEmpty())
+            throw new IllegalArgumentException("Flower name cannot be empty.");
+        if (color == null || color.trim().isEmpty())
+            throw new IllegalArgumentException("Flower color cannot be empty.");
+        if (size == null || size.trim().isEmpty())
+            throw new IllegalArgumentException("Flower size cannot be empty.");
+        if (price <= 0 || Double.isNaN(price) || Double.isInfinite(price))
+            throw new IllegalArgumentException("Flower price must be a positive number.");
+
+        this.name = name.trim();
+        this.color = color.trim();
+        this.price = price;
+        this.size = size.trim();
+    }
+
+    public String getName() { return name; }
+    public String getColor() { return color; }
+    public double getPrice() { return price; }
+    public String getSize() { return size; }
+
+    public String toFileString() {
+        return name + "," + color + "," + price + "," + size;
+    }
+}`,
+      "Flower_Lily.java": `package Flower_Type;
+
+import java.io.IOException;
+
+public class Flower_Lily extends Flower {
+    public Flower_Lily() throws IOException {
+        super("lily", "pink", 150, "small");
+    }
+
+    public void displayLilyInfo() {
+        displayFlowerInfo();
+        System.out.println("Description: An elegant flower with a pleasant fragrance.");
+    }
+}`,
+      "Flower_Rose.java": `package Flower_Type;
+
+import java.io.IOException;
+
+public class Flower_Rose extends Flower {
+    public Flower_Rose() throws IOException {
+        super("rose", "red", 160, "large");
+    }
+
+    public void displayRoseInfo() {
+        displayFlowerInfo();
+        System.out.println("Description: A beautiful and romantic flower.");
+    }
+}`,
+      "Flower_Sunflower.java": `package Flower_Type;
+
+import java.io.IOException;
+
+public class Flower_Sunflower extends Flower {
+    public Flower_Sunflower() throws IOException {
+        super("sunflower", "yellow", 190, "large");
+    }
+
+    public void displaySunflowerInfo() {
+        displayFlowerInfo();
+        System.out.println("Description: A bright flower that is known for facing the sun.");
+    }
+}`,
+      "Flower_Tulips.java": `package Flower_Type;
+
+import java.io.IOException;
+
+public class Flower_Tulips extends Flower {
+    public Flower_Tulips() throws IOException {
+        super("tulips", "violet", 120, "small");
+    }
+
+    public void displayTulipInfo() {
+        displayFlowerInfo();
+        System.out.println("Description: A colorful and elegant flower.");
+    }
+}`,
+      "FlowerFileHandler.java": `package Flower_Type;
+
+import Main.Buyer;
+import java.io.*;
+import java.nio.file.*;
+import java.nio.charset.StandardCharsets;
+
+public class FlowerFileHandler {
+    private static final Path DATA_FOLDER = Paths.get(System.getProperty("user.home"), "FlowerShopData");
+    private static final Path FILE_NAME = DATA_FOLDER.resolve("flowers.txt");
+
+    public static void savePurchase(Buyer buyer, Flower flower) throws IOException {
+        Files.createDirectories(DATA_FOLDER);
+        try (BufferedWriter writer = Files.newBufferedWriter(
+                FILE_NAME, StandardCharsets.UTF_8,
+                StandardOpenOption.CREATE, StandardOpenOption.APPEND)) {
+            writer.write("Buyer: " + buyer.getBuyerName()
+                + ", Contact: " + buyer.getContactNumber()
+                + ", " + flower.toFileString());
+            writer.newLine();
+        }
+    }
+}`
+    };
+
+    let purchaseRecords = [
+      "Buyer: Lea Mae Sapanta, Contact: 09153245973, rose,red,160.0,large\n------------------------------------------"
+    ];
+
+    function openFlowerModal(tab) {
+      document.getElementById("flower-modal").classList.add("open");
+      switchModalTab(tab);
+      updateFlowerShopUI();
+      loadFlowerRecords();
+      showJavaFile("FlowerShop.java", document.querySelector(".file-pill"));
+    }
+
+    function closeFlowerModal() {
+      document.getElementById("flower-modal").classList.remove("open");
+    }
+
+    function switchModalTab(tab) {
+      const demoView = document.getElementById("modal-demo-view");
+      const codeView = document.getElementById("modal-code-view");
+      const tabDemo = document.getElementById("tab-demo");
+      const tabCode = document.getElementById("tab-code");
+
+      if (tab === "demo") {
+        demoView.style.display = "block";
+        codeView.style.display = "none";
+        tabDemo.classList.add("active");
+        tabCode.classList.remove("active");
+      } else {
+        demoView.style.display = "none";
+        codeView.style.display = "block";
+        tabCode.classList.add("active");
+        tabDemo.classList.remove("active");
+      }
+    }
+
+    function updateFlowerShopUI() {
+      const selected = document.getElementById("fs-flower").value;
+      const item = flowerCatalog[selected];
+      if (!item) return;
+
+      document.getElementById("fs-color").value = item.color;
+      document.getElementById("fs-size").value = item.size;
+      document.getElementById("fs-price").value = item.price;
+      document.getElementById("fs-desc").textContent = item.description;
+    }
+
+    function purchaseFlower() {
+      const buyer = document.getElementById("fs-buyer").value.trim();
+      const contact = document.getElementById("fs-contact").value.trim();
+
+      if (!buyer || !contact) {
+        alert("Input Error: Please complete buyer information.");
+        return;
+      }
+
+      const flowerName = document.getElementById("fs-flower").value.toLowerCase();
+      const color = document.getElementById("fs-color").value.toLowerCase();
+      const size = document.getElementById("fs-size").value.toLowerCase();
+      const price = document.getElementById("fs-price").value;
+
+      const entry = `Buyer: ${buyer}, Contact: ${contact}, ${flowerName},${color},${price},${size}\n------------------------------------------`;
+      purchaseRecords.push(entry);
+
+      alert(`Purchase successfully saved!\n\nBuyer: ${buyer}\nFlower: ${flowerName}\nPrice: ₱${price}`);
+
+      loadFlowerRecords();
+      document.getElementById("fs-buyer").value = "";
+      document.getElementById("fs-contact").value = "";
+    }
+
+    function clearFlowerForm() {
+      document.getElementById("fs-buyer").value = "";
+      document.getElementById("fs-contact").value = "";
+      document.getElementById("fs-flower").selectedIndex = 0;
+      updateFlowerShopUI();
+    }
+
+    function loadFlowerRecords() {
+      const area = document.getElementById("fs-records");
+      area.value = purchaseRecords.length
+        ? purchaseRecords.join("\n")
+        : "No purchase records found.";
+    }
+
+    function showJavaFile(fileName, btnEl) {
+      document.getElementById("java-code-display").textContent = javaSourceFiles[fileName] || "";
+      document.querySelectorAll(".file-pill").forEach((pill) => pill.classList.remove("active"));
+      if (btnEl) btnEl.classList.add("active");
+    }
+  </script>
 </body>
 </html>
