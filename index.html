@@ -1,701 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio – Lea Mae Sapanta</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lea Mae Sapanta's student developer portfolio.">
+  <title>Lea Mae Sapanta | Portfolio</title>
 
-  <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-  />
-
-  <!-- Google Fonts (Poppins) -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <a class="logo" href="#home">Lea Mae Sapanta<span>.</span></a>
 
-  <!-- Header / Navbar -->
-  <header class="header">
-    <a href="#" class="logo">
-      <span>Lea Mae</span> Sapanta
-    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-
-    <i class="fa-solid fa-bars menu-icon" id="menu-icon"></i>
-
-    <a href="https://github.com/" target="_blank" class="visit-btn">
-      Visit GitHub
-    </a>
+    <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-button" href="#contact">Let's talk <i class="fa-regular fa-paper-plane"></i></a>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="about-container">  
-      <img
-        src="c:\profile ni lea\1795403252037[1].png"
-        alt="Lea Mae Sapanta"
-        class="about-img"
-      />
-
-      <div class="info-box">
-        <div class="text">
-          <h3>Hello, I’m</h3>
-          <h1>Lea Mae Sapanta</h1>
-          <span class="job-title">Web Developer</span>
-          <p class="motto">
-            "I'm a Computer Science student who believes that every line of code and every word written is a chance to create something meaningful for others."
-          </p>
+  <main>
+    <section class=b"hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Welcome to my portfolio</p>
+        <h1>Hello, I'm<br><span>Lea Mae Sapanta</span></h1>
+        <h2>Computer Science Student <span class="accent">|</span> Aspiring Web Developer</h2>
+        <p class="hero-description">
+          I enjoy learning how technology works and turning ideas into useful,
+          thoughtful digital experiences. I believe every line of code is a
+          chance to create something meaningful.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <i class="fa-solid fa-arrow-right"></i></a>
+          <a class="button button-outline" href="#contact">Contact me</a>
         </div>
-
-        <div class="button-group">
-          <a href="#" class="btn">Download CV</a>
-          <a href="#contact" class="btn">Contact Me</a>
-        </div>
-
-        <div class="socials">
-          <a href="https://github.com/" target="_blank" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
+        <div class="social-links">
+          <!-- Replace these URLs with your own profile links. -->
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <span>Find me online</span>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Achievements Section -->
-  <section id="achievements" class="achievements">
-    <h2 class="section-title">Achievements</h2>
-
-    <div class="achievement-grid">
-      <!-- Achievement 1 -->
-      <div class="achievement-card">
-        <i class="fa-solid fa-trophy"></i>
-        <h3>National Certificate II in CSS</h3>
-        <p>Recognized for completing the competency requirements under the Philippine TVET 4 Core Competency Assessment.</p>
+      <div class="hero-visual">
+        <!-- Put your portrait in this folder and name it profile.jpg, or change the path. -->
+        <div class="portrait-frame">
+          <img src="1795403252037[1].png" alt="Portrait of Lea Mae Sapanta" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+          <div class="portrait-placeholder"><i class="fa-regular fa-user"></i><span>Add your photo</span></div>
+        </div>
+        <div class="floating-note"><i class="fa-solid fa-code"></i><span>Learning<br>by building</span></div>
+        <div class="decorative-dot dot-one"></div>
+        <div class="decorative-dot dot-two"></div>
       </div>
+    </section>
 
-      <!-- Achievement 2 -->
-      <div class="achievement-card">
-        <i class="fa-solid fa-award"></i>
-        <h3>Community Service Recognition</h3>
-        <p>Honored for dedicated volunteer work and positive impact on the local community.</p>
+    <section class="section about-section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">A little about me</p>
+        <h2>About <span>Me</span></h2>
+        <p>Curious, creative, and always ready to learn something new.</p>
       </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <h2 class="section-title">My <span>Skills</span></h2>
-    <p class="section-subtitle">
-      These are some of the programming languages and skills I have learned and practiced.
-    </p>
-
-    <div class="skills-card-grid">
-      <div class="skill-box-card">
-        <i class="fa-brands fa-java skill-card-icon"></i>
-        <h3>Java</h3>
-        <p>Basic programming and system development.</p>
-      </div>
-
-      <div class="skill-box-card">
-        <i class="fa-solid fa-code skill-card-icon"></i>
-        <h3>C++</h3>
-        <p>Programming fundamentals and problem-solving.</p>
-      </div>
-
-      <div class="skill-box-card">
-        <i class="fa-brands fa-python skill-card-icon"></i>
-        <h3>Python</h3>
-        <p>Basic programming and logical thinking.</p>
-      </div>
-
-      <div class="skill-box-card">
-        <i class="fa-brands fa-js skill-card-icon"></i>
-        <h3>JavaScript</h3>
-        <p>Basic website interactivity and functionality.</p>
-      </div>
-
-      <div class="skill-box-card">
-        <i class="fa-brands fa-html5 skill-card-icon"></i>
-        <h3>HTML</h3>
-        <p>Creating and structuring web pages.</p>
-      </div>
-
-      <div class="skill-box-card">
-        <i class="fa-brands fa-css3-alt skill-card-icon"></i>
-        <h3>CSS</h3>
-        <p>Styling and designing web pages.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience" class="experience">
-    <h2 class="section-title">Experience</h2>
-
-    <div class="experience-info">
-      <div class="grid">
-        <!-- Card 1 -->
-        <div class="grid-card">
-          <i class="fa-solid fa-code"></i>
-          <span>Front-End Development</span>
+      <div class="about-panel">
+        <div class="about-icon"><i class="fa-regular fa-lightbulb"></i></div>
+        <div>
+          <h3>Learning today, creating for tomorrow.</h3>
           <p>
-            Building responsive and modern user interfaces using HTML, CSS, and JavaScript.
-          </p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="grid-card">
-          <i class="fa-solid fa-database"></i>
-          <span>Back-End & Systems</span>
-          <p>
-            Developing system logic and data handling using Java and C++.
-          </p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="grid-card">
-          <i class="fa-solid fa-laptop-code"></i>
-          <span>Web Development</span>
-          <p>
-            Creating full portfolio and system websites with clean, maintainable code.
-          </p>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="grid-card">
-          <i class="fa-solid fa-users"></i>
-          <span>Student & Practicum</span>
-          <p>
-            Applying academic knowledge in real-world projects and school systems.
+            I am a Computer Science student building my foundation in programming,
+            web development, and problem-solving. I enjoy exploring new tools,
+            practicing through projects, and improving my skills one step at a time.
           </p>
         </div>
       </div>
+    </section>
 
-      <img
-        src="1795403252037[1].png"
-        alt="Lea Mae Sapanta"
-        class="experience-img"
-      />
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2 class="section-title">Recent Projects</h2>
-
-    <div class="projects-grid">
-      <!-- Project 1: Flower Shop System (Java) -->
-      <div class="project-card">
-        <img
-          src="Flower_Shop_system.js/Flower_Shop"
-          alt="Flower Shop System"
-          class="project-img"
-          onerror="this.src='https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=400&q=80'"
-        />
-        <h3>Flower Shop System</h3>
-        <p>Java Swing OOP system for managing flower shop purchases, pricing, and file records[cite: 6, 8].</p>
-        <div class="button-group">
-          <button type="button" class="btn" onclick="openFlowerModal('demo')">Live Demo</button>
-          <button type="button" class="btn" onclick="openFlowerModal('code')">View Code</button>
-        </div>
+    <section class="section" id="achievements">
+      <div class="section-heading">
+        <p class="eyebrow">Milestones</p>
+        <h2>My <span>Achievements</span></h2>
+        <p>A few accomplishments and experiences I am proud of.</p>
       </div>
-
-      <!-- Project 2: Student Portfolio Website -->
-      <div class="project-card">
-        <img
-          src="student-portfolio-website.png"
-          alt="Student Portfolio Website"
-          class="project-img"
-          onerror="this.src='https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80'"
-        />
-        <h3>Student Portfolio Website</h3>
-        <p>Responsive personal portfolio website built with HTML, CSS, and JavaScript.</p>
-        <div class="button-group">
-          <a href="#about" class="btn">Live Demo</a>
-          <a href="https://github.com/" target="_blank" class="btn">View Code</a>
-        </div>
+      <div class="achievement-grid">
+        <article class="info-card">
+          <div class="card-icon"><i class="fa-solid fa-award"></i></div>
+          <h3>National Certificate II in CSS</h3>
+          <p>Recognized for completing the required competencies under the Philippine TVET assessment.</p>
+        </article>
+        <article class="info-card">
+          <div class="card-icon"><i class="fa-solid fa-hands-helping"></i></div>
+          <h3>Community Service Recognition</h3>
+          <p>Recognized for volunteer service and contributing positively to the local community.</p>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2 class="section-title">Contact <span>Me</span></h2>
-    <p class="section-subtitle">
-      Feel free to contact me for questions, collaboration, or other opportunities.
-    </p>
+    <section class="section skills-section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">What I am learning</p>
+        <h2>My <span>Skills</span></h2>
+        <p>These are some of the programming languages and skills I have learned and practiced.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card skill-java">
+          <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+          <h3>Java</h3>
+          <p>Basic programming and system development.</p>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>C++</h3>
+          <p>Programming fundamentals and problem-solving.</p>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+          <h3>Python</h3>
+          <p>Basic programming and logical thinking.</p>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+          <h3>JavaScript</h3>
+          <p>Basic website interactivity and functionality.</p>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <h3>HTML</h3>
+          <p>Creating and structuring web pages.</p>
+        </article>
+        <article class="skill-card">
+          <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+          <h3>CSS</h3>
+          <p>Styling and designing responsive web pages.</p>
+        </article>
+      </div>
+    </section>
 
-    <div class="contact-card-grid">
-      <a href="mailto:leamaesapanta@gmail.com" class="contact-box-card">
-        <i class="fa-solid fa-envelope contact-card-icon"></i>
-        <h3>Email</h3>
-        <p>leamaesapanta@gmail.com</p>
-      </a>
+    <section class="section" id="experience">
+      <div class="section-heading">
+        <p class="eyebrow">My learning journey</p>
+        <h2>Experience &amp; <span>Focus</span></h2>
+        <p>Areas where I continue to build knowledge and practical experience.</p>
+      </div>
+      <div class="experience-grid">
+        <article class="experience-card"><i class="fa-solid fa-laptop-code"></i><h3>Front-End Development</h3><p>Building responsive interfaces using HTML, CSS, and JavaScript.</p></article>
+        <article class="experience-card"><i class="fa-solid fa-terminal"></i><h3>Programming</h3><p>Practicing programming logic and object-oriented concepts using Java and C++.</p></article>
+        <article class="experience-card"><i class="fa-solid fa-diagram-project"></i><h3>System Development</h3><p>Applying programming concepts to small academic and personal system projects.</p></article>
+        <article class="experience-card"><i class="fa-solid fa-people-group"></i><h3>Teamwork &amp; Communication</h3><p>Developing collaboration, communication, and problem-solving skills through learning activities.</p></article>
+      </div>
+    </section>
 
-      <a href="https://github.com/" target="_blank" class="contact-box-card">
-        <i class="fa-brands fa-github contact-card-icon"></i>
-        <h3>GitHub</h3>
-        <p>Visit my GitHub: https://github.com/leamaesapanta</p>
-      </a>
+    <section class="section projects-section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Things I have made</p>
+        <h2>Recent <span>Projects</span></h2>
+        <p>Some projects that reflect what I have been practicing.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-art flower-art"><i class="fa-solid fa-seedling"></i><span>JAVA DESKTOP APPLICATION</span></div>
+          <div class="project-content">
+            <p class="project-type">Programming · Java Swing</p>
+            <h3>Flower Shop Management System</h3>
+            <p>A desktop application with a graphical interface for selecting flowers, entering buyer details, processing purchases, and viewing saved purchase records.</p>
+            <div class="project-feature-list">
+              <span><i class="fa-solid fa-check"></i> Buyer information validation</span>
+              <span><i class="fa-solid fa-check"></i> Lily, rose, sunflower, and tulip selection</span>
+              <span><i class="fa-solid fa-check"></i> Automatic flower details and prices</span>
+              <span><i class="fa-solid fa-check"></i> Save and view purchase records using file handling</span>
+            </div>
+            <div class="tag-list"><span>Java</span><span>Swing GUI</span><span>OOP</span><span>File Handling</span></div>
+            <a class="text-link" href="FlowerShop-Source-Code.zip" download>Download source code <i class="fa-solid fa-download"></i></a>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-art web-art"><i class="fa-solid fa-window-maximize"></i><span>WEB PROJECT</span></div>
+          <div class="project-content">
+            <p class="project-type">Web Development</p>
+            <h3>Student Portfolio Website</h3>
+            <p>A personal website presenting my background, skills, achievements, and projects using web technologies.</p>
+            <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a class="text-link" href="#home">Back to top <i class="fa-solid fa-arrow-up"></i></a>
+          </div>
+        </article>
+      </div>
+    </section>
 
-      <a href="https://www.linkedin.com/" target="_blank" class="contact-box-card">
-        <i class="fa-brands fa-linkedin contact-card-icon"></i>
-        <h3>LinkedIn</h3>
-        <p>Visit my LinkedIn: https://www.linkedin.com/in/leamaesapanta</p>
-      </a>
-    </div>
-  </section>
+    <section class="section contact-section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Let's connect</p>
+        <h2>Contact <span>Me</span></h2>
+        <p>Feel free to contact me for questions, collaboration, or other opportunities.</p>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:leamaesapanta@gmail.com">
+          <div class="card-icon"><i class="fa-solid fa-envelope"></i></div>
+          <h3>Email</h3><p>leamaesapanta@gmail.com</p><span>Send me an email <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <a class="contact-card" href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <div class="card-icon"><i class="fa-brands fa-github"></i></div>
+          <h3>GitHub</h3><p>Visit my GitHub profile</p><span>View profile <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+          <div class="card-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+          <h3>LinkedIn</h3><p>Connect with me</p><span>View profile <i class="fa-solid fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </section>
+  </main>
 
-  <!-- Footer -->
   <footer class="footer">
-    <ul class="footer-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <p class="copyright">
-      &copy; 2026 Lea Mae Sapanta. All rights reserved.
-    </p>
+    <a class="logo" href="#home">Lea Mae<span>.</span></a>
+    <p>© <span id="year"></span> Lea Mae Sapanta. All rights reserved.</p>
+    <a class="back-to-top" href="#home" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
   </footer>
 
-  <!-- Interactive Modal for Flower Shop Inventory System -->
-  <div id="flower-modal" class="modal-overlay">
-    <div class="modal-box">
-      <div class="modal-top-bar">
-        <div class="modal-tabs">
-          <button type="button" class="tab-btn active" id="tab-demo" onclick="switchModalTab('demo')">
-            <i class="fa-solid fa-desktop"></i> Interactive Demo
-          </button>
-          <button type="button" class="tab-btn" id="tab-code" onclick="switchModalTab('code')">
-            <i class="fa-solid fa-code"></i> Java Source Code (8 Files)
-          </button>
-        </div>
-        <button type="button" class="close-modal" onclick="closeFlowerModal()">&times;</button>
-      </div>
-
-      <!-- TAB 1: Interactive Simulation of FlowerShop.java -->
-      <div id="modal-demo-view" class="modal-content-area">
-        <div class="fs-app">
-          <div class="fs-header">
-            <h2>🌸 FLOWER SHOP INVENTORY 🌸</h2>
-            <p>Flower Purchase and Management System</p>
-          </div>
-
-          <div class="fs-body">
-            <!-- Left Forms -->
-            <div class="fs-left">
-              <fieldset class="fs-fieldset">
-                <legend>Buyer Information</legend>
-                <div class="fs-row">
-                  <label for="fs-buyer">Buyer Name:</label>
-                  <input type="text" id="fs-buyer" placeholder="e.g. Maria Clara" />
-                </div>
-                <div class="fs-row">
-                  <label for="fs-contact">Contact Number:</label>
-                  <input type="text" id="fs-contact" placeholder="e.g. 09123456789" />
-                </div>
-              </fieldset>
-
-              <fieldset class="fs-fieldset">
-                <legend>Flower Information</legend>
-                <div class="fs-row">
-                  <label for="fs-flower">Select Flower:</label>
-                  <select id="fs-flower" onchange="updateFlowerShopUI()">
-                    <option value="Lily">Lily</option>
-                    <option value="Rose">Rose</option>
-                    <option value="Sunflower">Sunflower</option>
-                    <option value="Tulips">Tulips</option>
-                  </select>
-                </div>
-                <div class="fs-row">
-                  <label for="fs-color">Flower Color:</label>
-                  <select id="fs-color">
-                    <option value="Pink">Pink</option>
-                    <option value="Red">Red</option>
-                    <option value="Yellow">Yellow</option>
-                    <option value="Violet">Violet</option>
-                  </select>
-                </div>
-                <div class="fs-row">
-                  <label for="fs-size">Flower Size:</label>
-                  <select id="fs-size">
-                    <option value="Small">Small</option>
-                    <option value="Medium">Medium</option>
-                    <option value="Large">Large</option>
-                  </select>
-                </div>
-                <div class="fs-row">
-                  <label for="fs-price">Flower Price:</label>
-                  <input type="text" id="fs-price" readonly />
-                </div>
-                <div class="fs-row">
-                  <label>Description:</label>
-                  <span id="fs-desc" class="fs-desc-text">Elegant and fragrant flower.</span>
-                </div>
-              </fieldset>
-            </div>
-
-            <!-- Right Records Area -->
-            <div class="fs-right">
-              <fieldset class="fs-fieldset fs-records-box">
-                <legend>Purchase Records (flowers.txt)</legend>
-                <textarea id="fs-records" readonly></textarea>
-              </fieldset>
-            </div>
-          </div>
-
-          <div class="fs-actions">
-            <button type="button" class="fs-btn" onclick="purchaseFlower()">PURCHASE</button>
-            <button type="button" class="fs-btn" onclick="clearFlowerForm()">CLEAR</button>
-            <button type="button" class="fs-btn" onclick="loadFlowerRecords()">VIEW RECORDS</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- TAB 2: Java Source Code Viewer -->
-      <div id="modal-code-view" class="modal-content-area" style="display: none;">
-        <div class="file-selector" id="java-file-tabs">
-          <button type="button" class="file-pill active" onclick="showJavaFile('FlowerShop.java', this)">Main/FlowerShop.java</button>
-          <button type="button" class="file-pill" onclick="showJavaFile('Buyer.java', this)">Main/Buyer.java</button>
-          <button type="button" class="file-pill" onclick="showJavaFile('Flower.java', this)">Flower_Type/Flower.java</button>
-          <button type="button" class="file-pill" onclick="showJavaFile('Flower_Lily.java', this)">Flower_Lily.java</button>
-          <button type="button" class="file-pill" onclick="showJavaFile('Flower_Rose.java', this)">Flower_Rose.java</button>
-          <button type="button" class="file-pill" onclick="showJavaFile('Flower_Sunflower.java', this)">Flower_Sunflower.java</button>
-          <button type="button" class="file-pill" onclick="showJavaFile('Flower_Tulips.java', this)">Flower_Tulips.java</button>
-          <button type="button" class="file-pill" onclick="showJavaFile('FlowerFileHandler.java', this)">FlowerFileHandler.java</button>
-        </div>
-        <pre class="code-viewer"><code id="java-code-display"></code></pre>
-      </div>
-    </div>
-  </div>
-
-  <!-- JavaScript -->
-  <script>
-    // Mobile Menu Toggle
-    const menuIcon = document.getElementById("menu-icon");
-    const navLinks = document.getElementById("nav-links");
-
-    if (menuIcon && navLinks) {
-      menuIcon.addEventListener("click", () => {
-        navLinks.classList.toggle("active");
-      });
-
-      document.querySelectorAll(".nav-links a").forEach((link) => {
-        link.addEventListener("click", () => {
-          navLinks.classList.remove("active");
-        });
-      });
-    }
-
-    // Flower Shop Management System Simulation
-    const flowerCatalog = {
-      Lily: {
-        color: "Pink",
-        size: "Small",
-        price: "150.0",
-        description: "Elegant and fragrant flower.",
-      },
-      Rose: {
-        color: "Red",
-        size: "Large",
-        price: "160.0",
-        description: "Beautiful and romantic flower.",
-      },
-      Sunflower: {
-        color: "Yellow",
-        size: "Large",
-        price: "190.0",
-        description: "Bright flower that faces the sun.",
-      },
-      Tulips: {
-        color: "Violet",
-        size: "Small",
-        price: "120.0",
-        description: "Colorful and elegant flower.",
-      },
-    };
-
-    const javaSourceFiles = {
-      "FlowerShop.java": `package Main;
-
-import Flower_Type.*;
-import javax.swing.*;
-import javax.swing.border.*;
-import java.awt.*;
-import java.io.IOException;
-
-public class FlowerShop {
-    private static JTextField buyerNameField, contactField, priceField;
-    private static JComboBox<String> flowerCombo, colorCombo, sizeCombo;
-    private static JTextArea recordsArea;
-    private static JLabel descriptionLabel;
-    private static JFrame frame;
-
-    private static final Color PINK = new Color(219, 112, 147);
-    private static final Color LIGHT_PINK = new Color(255, 240, 245);
-    private static final Color DARK_PINK = new Color(153, 50, 90);
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> createGUI());
-    }
-
-    private static Flower createFlower(String name) throws IOException {
-        switch (name) {
-            case "Lily": return new Flower_Lily();
-            case "Rose": return new Flower_Rose();
-            case "Sunflower": return new Flower_Sunflower();
-            case "Tulips": return new Flower_Tulips();
-            default: throw new IllegalArgumentException("Invalid flower selection.");
-        }
-    }
-}`,
-      "Buyer.java": `package Main;
-
-public class Buyer {
-    private String buyerName;
-    private String contactNumber;
-
-    public Buyer(String buyerName, String contactNumber) {
-        if (buyerName == null || buyerName.trim().isEmpty()) {
-            throw new IllegalArgumentException("Buyer name cannot be empty.");
-        }
-        if (contactNumber == null || contactNumber.trim().isEmpty()) {
-            throw new IllegalArgumentException("Contact number cannot be empty.");
-        }
-        this.buyerName = buyerName.trim();
-        this.contactNumber = contactNumber.trim();
-    }
-
-    public String getBuyerName() { return buyerName; }
-    public String getContactNumber() { return contactNumber; }
-}`,
-      "Flower.java": `package Flower_Type;
-
-import java.io.IOException;
-
-public class Flower {
-    private String name;
-    private String color;
-    private double price;
-    private String size;
-
-    public Flower(String name, String color, double price, String size) throws IOException {
-        if (name == null || name.trim().isEmpty())
-            throw new IllegalArgumentException("Flower name cannot be empty.");
-        if (color == null || color.trim().isEmpty())
-            throw new IllegalArgumentException("Flower color cannot be empty.");
-        if (size == null || size.trim().isEmpty())
-            throw new IllegalArgumentException("Flower size cannot be empty.");
-        if (price <= 0 || Double.isNaN(price) || Double.isInfinite(price))
-            throw new IllegalArgumentException("Flower price must be a positive number.");
-
-        this.name = name.trim();
-        this.color = color.trim();
-        this.price = price;
-        this.size = size.trim();
-    }
-
-    public String getName() { return name; }
-    public String getColor() { return color; }
-    public double getPrice() { return price; }
-    public String getSize() { return size; }
-
-    public String toFileString() {
-        return name + "," + color + "," + price + "," + size;
-    }
-}`,
-      "Flower_Lily.java": `package Flower_Type;
-
-import java.io.IOException;
-
-public class Flower_Lily extends Flower {
-    public Flower_Lily() throws IOException {
-        super("lily", "pink", 150, "small");
-    }
-
-    public void displayLilyInfo() {
-        displayFlowerInfo();
-        System.out.println("Description: An elegant flower with a pleasant fragrance.");
-    }
-}`,
-      "Flower_Rose.java": `package Flower_Type;
-
-import java.io.IOException;
-
-public class Flower_Rose extends Flower {
-    public Flower_Rose() throws IOException {
-        super("rose", "red", 160, "large");
-    }
-
-    public void displayRoseInfo() {
-        displayFlowerInfo();
-        System.out.println("Description: A beautiful and romantic flower.");
-    }
-}`,
-      "Flower_Sunflower.java": `package Flower_Type;
-
-import java.io.IOException;
-
-public class Flower_Sunflower extends Flower {
-    public Flower_Sunflower() throws IOException {
-        super("sunflower", "yellow", 190, "large");
-    }
-
-    public void displaySunflowerInfo() {
-        displayFlowerInfo();
-        System.out.println("Description: A bright flower that is known for facing the sun.");
-    }
-}`,
-      "Flower_Tulips.java": `package Flower_Type;
-
-import java.io.IOException;
-
-public class Flower_Tulips extends Flower {
-    public Flower_Tulips() throws IOException {
-        super("tulips", "violet", 120, "small");
-    }
-
-    public void displayTulipInfo() {
-        displayFlowerInfo();
-        System.out.println("Description: A colorful and elegant flower.");
-    }
-}`,
-      "FlowerFileHandler.java": `package Flower_Type;
-
-import Main.Buyer;
-import java.io.*;
-import java.nio.file.*;
-import java.nio.charset.StandardCharsets;
-
-public class FlowerFileHandler {
-    private static final Path DATA_FOLDER = Paths.get(System.getProperty("user.home"), "FlowerShopData");
-    private static final Path FILE_NAME = DATA_FOLDER.resolve("flowers.txt");
-
-    public static void savePurchase(Buyer buyer, Flower flower) throws IOException {
-        Files.createDirectories(DATA_FOLDER);
-        try (BufferedWriter writer = Files.newBufferedWriter(
-                FILE_NAME, StandardCharsets.UTF_8,
-                StandardOpenOption.CREATE, StandardOpenOption.APPEND)) {
-            writer.write("Buyer: " + buyer.getBuyerName()
-                + ", Contact: " + buyer.getContactNumber()
-                + ", " + flower.toFileString());
-            writer.newLine();
-        }
-    }
-}`
-    };
-
-    let purchaseRecords = [
-      "Buyer: Lea Mae Sapanta, Contact: 09153245973, rose,red,160.0,large\n------------------------------------------"
-    ];
-
-    function openFlowerModal(tab) {
-      document.getElementById("flower-modal").classList.add("open");
-      switchModalTab(tab);
-      updateFlowerShopUI();
-      loadFlowerRecords();
-      showJavaFile("FlowerShop.java", document.querySelector(".file-pill"));
-    }
-
-    function closeFlowerModal() {
-      document.getElementById("flower-modal").classList.remove("open");
-    }
-
-    function switchModalTab(tab) {
-      const demoView = document.getElementById("modal-demo-view");
-      const codeView = document.getElementById("modal-code-view");
-      const tabDemo = document.getElementById("tab-demo");
-      const tabCode = document.getElementById("tab-code");
-
-      if (tab === "demo") {
-        demoView.style.display = "block";
-        codeView.style.display = "none";
-        tabDemo.classList.add("active");
-        tabCode.classList.remove("active");
-      } else {
-        demoView.style.display = "none";
-        codeView.style.display = "block";
-        tabCode.classList.add("active");
-        tabDemo.classList.remove("active");
-      }
-    }
-
-    function updateFlowerShopUI() {
-      const selected = document.getElementById("fs-flower").value;
-      const item = flowerCatalog[selected];
-      if (!item) return;
-
-      document.getElementById("fs-color").value = item.color;
-      document.getElementById("fs-size").value = item.size;
-      document.getElementById("fs-price").value = item.price;
-      document.getElementById("fs-desc").textContent = item.description;
-    }
-
-    function purchaseFlower() {
-      const buyer = document.getElementById("fs-buyer").value.trim();
-      const contact = document.getElementById("fs-contact").value.trim();
-
-      if (!buyer || !contact) {
-        alert("Input Error: Please complete buyer information.");
-        return;
-      }
-
-      const flowerName = document.getElementById("fs-flower").value.toLowerCase();
-      const color = document.getElementById("fs-color").value.toLowerCase();
-      const size = document.getElementById("fs-size").value.toLowerCase();
-      const price = document.getElementById("fs-price").value;
-
-      const entry = `Buyer: ${buyer}, Contact: ${contact}, ${flowerName},${color},${price},${size}\n------------------------------------------`;
-      purchaseRecords.push(entry);
-
-      alert(`Purchase successfully saved!\n\nBuyer: ${buyer}\nFlower: ${flowerName}\nPrice: ₱${price}`);
-
-      loadFlowerRecords();
-      document.getElementById("fs-buyer").value = "";
-      document.getElementById("fs-contact").value = "";
-    }
-
-    function clearFlowerForm() {
-      document.getElementById("fs-buyer").value = "";
-      document.getElementById("fs-contact").value = "";
-      document.getElementById("fs-flower").selectedIndex = 0;
-      updateFlowerShopUI();
-    }
-
-    function loadFlowerRecords() {
-      const area = document.getElementById("fs-records");
-      area.value = purchaseRecords.length
-        ? purchaseRecords.join("\n")
-        : "No purchase records found.";
-    }
-
-    function showJavaFile(fileName, btnEl) {
-      document.getElementById("java-code-display").textContent = javaSourceFiles[fileName] || "";
-      document.querySelectorAll(".file-pill").forEach((pill) => pill.classList.remove("active"));
-      if (btnEl) btnEl.classList.add("active");
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
